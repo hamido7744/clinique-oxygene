@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clinique Oxygène</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Clinique Oxygène</h1>
+  <p>Un lieu pour apaiser, soigner et accompagner</p>
+</header>
+
+<nav>
+  <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+  <div id="nav-links">
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#video">Vidéo</a>
+    <a href="#apropos">À propos</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero" id="accueil">
+  <img src="images/clinique_oxygene_vue_exterieure.jpg" alt="Vue extérieure de la clinique">
+</div>
+
+<section id="galerie">
+  <h2>Galerie Photo</h2>
+  <div class="galerie">
+    <img src="images/photo1.jpg" alt="Vue extérieure" />
+    <img src="images/photo2.jpg" alt="Espace détente" />
+    <img src="images/photo3.jpg" alt="Salle de soins" />
+    <img src="images/photo4.jpg" alt="Chambre patient" />
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Clinique Oxygène – Tous droits réservés.
+</footer>
+
+<script>
+  function toggleMenu() {
+    const links = document.getElementById('nav-links');
+    if (links.style.display === 'flex') {
+      links.style.display = 'none';
+    } else {
+      links.style.display = 'flex';
+      links.style.flexDirection = 'column';
+    }
+  }
+</script>
+
+</body>
+</html>

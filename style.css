@@ -1,0 +1,32 @@
+/* style.css */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f7fdfc;
+  color: #222;
+}
+/* ... Suite du CSS copié depuis le modèle précédent ... */
+header {
+  background-color: #1f776d;
+  padding: 50px 20px;
+  color: white;
+  text-align: center;
+}
+/* Simplifié ici, à compléter avec les autres règles */
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+.galerie img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
